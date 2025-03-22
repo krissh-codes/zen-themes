@@ -1,0 +1,11 @@
+#navigator-toolbox {
+    @media (-moz-platform: macos) {
+        --border-radius-medium: 10px;
+        --tab-border-radius: 8px;
+    }
+}
+
+findbar {
+    max-width: 600px !important;
+    font-size: 12px;
+}

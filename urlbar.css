@@ -1,0 +1,113 @@
+#urlbar-input[aria-expanded='false'] {
+    text-align: center !important;
+}
+
+#userContext-label {
+    display: none;
+}
+
+#star-button-box {
+    display: none;
+}
+
+#nav-bar #urlbar:not([breakout-extend='true']) {
+    :root:not([supress-primary-adjustment]) & #urlbar-background {
+        margin: 2px !important;
+    }
+
+    #zen-current-workspace-indicator-container {
+        display: none;
+    }
+
+    #zen-media-controls-toolbar {
+        margin-top: 10px;
+    }
+}
+
+@-moz-document url-prefix("chrome:") {
+    /* Blurs the background */
+    #urlbar[breakout-extend='true'] #urlbar-background {
+        border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
+        border-radius: 15px !important;
+        background: light-dark(rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)) !important;
+        backdrop-filter: blur(25px) saturate(2) !important;
+        outline: none !important;
+    }
+
+    .urlbarView-row .urlbarView-url,
+    .urlbarView-title-separator::before {
+        color: light-dark(#666, #ccc) !important;
+    }
+
+    /* Unifies the border radius */
+    .urlbarView-row {
+        border-radius: 11px !important;
+    }
+
+    /* Deletes the border */
+    .urlbarView-body-inner {
+        border: none !important;
+    }
+
+    .urlbarView-row[has-action]:is([type='switchtab'], [type='remotetab'], [type='clipboard']) {
+        & > .urlbarView-row-inner > .urlbarView-no-wrap > .urlbarView-action {
+            padding: 0 !important;
+        }
+    }
+
+    .urlbarView-userContext-textMode {
+        text-transform: uppercase !important;
+        font-weight: normal !important;
+        font-size: 13px;
+    }
+
+    .urlbarView-row[has-action]:is([type='switchtab'], [type='remotetab'], [type='clipboard']) {
+        &:is([type='switchtab'], [type='remotetab']) .urlbarView-action {
+            scale: 0.9 !important;
+        }
+    }
+
+    .urlbarView-row[has-action]:is([type='switchtab'], [type='remotetab'], [type='clipboard']) {
+        &:is([type='switchtab'], [type='remotetab']) .urlbarView-action {
+            &::after {
+                display: none !important;
+            }
+        }
+    }
+
+    /* Styles the search options */
+    .search-one-offs {
+        border-top: none !important;
+        border-radius: 10px !important;
+        padding: 4px !important;
+        margin: 0px 0px 7px 0px !important;
+        backdrop-filter: brightness(130%);
+    }
+
+    .searchbar-engine-one-off-item {
+        border-radius: 8px !important;
+        margin-right: 3px !important;
+    }
+
+    #urlbar-anon-search-settings {
+        margin-right: 0px !important;
+    }
+
+    .urlbarView-row-inner {
+        padding-block: 8px !important;
+        padding-inline: 8px !important;
+    }
+
+    .urlbarView-type-icon {
+        stroke: transparent !important;
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
+#browser:has(#urlbar[open][zen-floating-urlbar='true']) #tabbrowser-tabpanels {
+    pointer-events: none;
+    filter: blur(3px) brightness(70%) !important;
+    transform: scale(0.99) !important;
+    transition: all 0.2s ease-in-out !important;
+}

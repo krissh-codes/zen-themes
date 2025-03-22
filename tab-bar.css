@@ -1,0 +1,16 @@
+.zen-current-workspace-indicator {
+    display: none !important;
+}
+
+zen-workspace {
+    padding-top: 50px !important;
+}
+
+#tabbrowser-tabs[orient='vertical'] {
+    &:not([expanded]) {
+        & .tab-close-button {
+            top: -2px !important;
+            left: -1px !important;
+        }
+    }
+}

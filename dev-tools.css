@@ -1,0 +1,36 @@
+.devtools-tabbar,
+.devtools-toolbar,
+.tabs-navigation,
+.ruleview-header,
+.tabs-menu,
+.splitview-controller,
+.toolbox-tabs,
+.devtools-tab,
+.request-list-empty-notice,
+.requests-list-table {
+    font-family: var(--theme-font-family) !important;
+}
+
+.modal {
+    border-radius: 6px;
+
+    .search-outline {
+        border-radius: 6px;
+    }
+
+    input {
+        border-radius: 6px;
+    }
+}
+
+#result-list {
+    border-radius: 6px;
+}
+
+.result-list li.selected {
+    background-color: var(--theme-highlight-blue) !important;
+}
+
+.CodeMirror-scroll {
+    padding-bottom: 0 !important;
+}

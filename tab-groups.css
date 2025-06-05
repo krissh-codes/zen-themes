@@ -126,7 +126,7 @@ tab-group:not([split-view-group]) {
             background: transparent !important;
             border: unset !important;
             font-weight: 521 !important;
-            font-size: var(--psu-tab_title_fixes-font_size) !important;
+            font-size: var(--psu-tab_title_fixes-font_size, 13px) !important;
             text-align: unset !important;
             color: var(--sidebar-text-color) !important;
             padding-left: 27px !important;

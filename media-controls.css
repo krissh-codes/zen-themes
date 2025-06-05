@@ -1,7 +1,7 @@
-.zen-media-title {
-    font-size: 13px !important;
+#zen-media-title {
+    font-size: var(--psu-tab_title_fixes-font_size, 13px) !important;
 }
 
-.zen-media-artist {
-    font-size: 11px !important;
+#zen-media-artist {
+    font-size: calc(var(--psu-tab_title_fixes-font_size, 13px) - 2px) !important;
 }

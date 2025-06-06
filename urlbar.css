@@ -25,7 +25,10 @@
 }
 
 @-moz-document url-prefix("chrome:") {
-    /* Blurs the background */
+    #urlbar[breakout-extend='true'] {
+        backdrop-filter: blur(10px) !important;
+    }
+
     #urlbar[breakout-extend='true'] #urlbar-background {
         border: solid 3px color-mix(in hsl, hsl(0 0 50), transparent 90%) !important;
         border-radius: 15px !important;
@@ -103,11 +106,4 @@
         width: 10px !important;
         height: 10px !important;
     }
-}
-
-#browser:has(#urlbar[open][zen-floating-urlbar='true']) #tabbrowser-tabpanels {
-    pointer-events: none;
-    filter: blur(3px) brightness(70%) !important;
-    transform: scale(0.99) !important;
-    transition: all 0.2s ease-in-out !important;
 }

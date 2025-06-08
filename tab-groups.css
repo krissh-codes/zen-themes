@@ -143,7 +143,7 @@ tab-group:not([split-view-group]) {
             left: 1px !important;
             margin-top: 1.5px !important;
             top: 1% !important;
-            transform: scale(.9) !important;
+            transform: scale(0.9) !important;
             content: var(--folder-icon-open) !important;
         }
     }
@@ -235,8 +235,13 @@ tab-group:not([split-view-group]) {
             top: 4px !important;
             width: 0px !important;
             height: 8px !important;
-            transform: scale(.7) !important;
+            transform: scale(0.7) !important;
             content: var(--folder-icon-closed) !important;
         }
     }
+}
+
+#navigator-toolbox:not([zen-sidebar-expanded='true']) tab-group:not([split-view-group]) tab:not([zen-glance-tab]) {
+    margin-left: 0 !important;
+    border-left: 2px solid light-dark(var(--tab-group-color), var(--tab-group-color-invert)) !important;
 }

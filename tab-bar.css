@@ -2,6 +2,10 @@
     display: none !important;
 }
 
+.zen-essentials-container {
+    padding-top: 0 !important;
+}
+
 zen-workspace {
     padding-top: 50px !important;
 }

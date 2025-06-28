@@ -6,6 +6,15 @@ zen-workspace {
     padding-top: 50px !important;
 }
 
+.vertical-pinned-tabs-container-separator {
+    margin: 6px auto !important;
+    height: 2px !important;
+    max-height: 2px !important;
+    width: 10% !important;
+    min-width: 10px !important;
+    border-radius: 2px !important;
+}
+
 #tabbrowser-tabs[orient='vertical'] {
     &:not([expanded]) {
         & .tab-close-button {

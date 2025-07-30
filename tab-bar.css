@@ -10,7 +10,7 @@ zen-workspace {
     padding-top: 50px !important;
 }
 
-.vertical-pinned-tabs-container-separator {
+.pinned-tabs-container-separator {
     margin: 6px auto !important;
     height: 2px !important;
     max-height: 2px !important;

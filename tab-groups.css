@@ -245,3 +245,13 @@ tab-group:not([split-view-group]) {
     margin-left: 0 !important;
     border-left: 2px solid light-dark(var(--tab-group-color), var(--tab-group-color-invert)) !important;
 }
+
+zen-folder {
+  & > .tab-group-label-container {
+    & .tab-group-folder-icon {
+      :root[zen-sidebar-expanded] & {
+        top: 5px !important;
+      }
+    }
+  }
+}

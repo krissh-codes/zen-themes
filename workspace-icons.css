@@ -5,3 +5,13 @@
 .zen-workspace-icon {
     line-height: 1.5;
 }
+
+#zen-workspaces-button {
+  & toolbarbutton {
+    &[active="true"], &[dragged="true"] {
+      color: var(--zen-secondary-btn-color) !important;
+    }
+    
+    transition: color 0.3s ease-in-out;
+  }
+}

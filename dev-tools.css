@@ -34,3 +34,20 @@
 .CodeMirror-scroll {
     padding-bottom: 0 !important;
 }
+
+.devtools-tab,
+.devtools-sidebar-tabs tab {
+    border-radius: var(--theme-border-radius) var(--theme-border-radius) 0 0 !important;
+    transition: background-color var(--theme-transition-duration) var(--theme-transition-timing),
+        box-shadow var(--theme-transition-duration) var(--theme-transition-timing),
+        padding var(--theme-transition-duration) var(--theme-transition-timing) !important;
+    font-family: var(--theme-font-family);
+}
+
+.devtools-tabbar *, .tabs-navigation *, .panel *, .welcomebox *, .secondary-panes * {
+    font-family: var(--theme-font-family) !important;
+}
+
+.properties-view * {
+    font-family: Menlo !important;
+}

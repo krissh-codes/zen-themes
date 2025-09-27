@@ -39,3 +39,8 @@ zen-workspace {
 .zen-workspace-pinned-tabs-section .tab-background {
     min-height: 42px !important;
 }
+
+.vertical-pinned-tabs-container-separator {
+    width: 42px !important;
+    max-width: 50% !important;
+}

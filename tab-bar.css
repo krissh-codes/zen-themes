@@ -35,3 +35,7 @@ zen-workspace {
     --tab-collapsed-background-width: 40px !important;
     --tab-min-height: 38px !important;
 }
+
+.zen-workspace-pinned-tabs-section .tab-background {
+    min-height: 42px !important;
+}

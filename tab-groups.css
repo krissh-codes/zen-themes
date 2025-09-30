@@ -246,6 +246,10 @@ tab-group:not([split-view-group]) {
     border-left: 2px solid light-dark(var(--tab-group-color), var(--tab-group-color-invert)) !important;
 }
 
+.tab-group-label tab-group[collapsed] > .tab-group-label-container {
+    outline: none !important;
+}
+
 zen-folder {
   & > .tab-group-label-container {
     & .tab-group-folder-icon {

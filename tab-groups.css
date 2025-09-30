@@ -203,7 +203,6 @@ tab-group:not([split-view-group]) {
         /* Target state for collapsed group animation */
         max-height: 52px !important;
         margin-top: 2px !important;
-        margin-bottom: -12px !important;
 
         /* Hide the line instantly or fade quickly */
         & tab::before {

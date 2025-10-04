@@ -10,8 +10,8 @@
     display: none;
 }
 
-.chromeclass-toolbar-additional:first-of-type {
-    max-width: 108px !important;
+#customizableui-special-spring70 {
+    max-width: 65px !important;
 }
 
 #nav-bar #urlbar:not([breakout-extend='true']) {
@@ -27,6 +27,35 @@
         margin-top: 10px;
     }
 }
+
+#identity-box, #trust-icon-container, #tracking-protection-icon-container {
+    position: absolute;
+    transform: translateY(-50%);
+    background: light-dark(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3));
+    height: 28px;
+    top: 50%;
+    left: 1px;
+    border-radius: 8px;
+    padding: 0 2px;
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+#urlbar:hover {
+    #identity-box, #trust-icon-container, #tracking-protection-icon-container {
+        opacity: 1;
+    }
+}
+
+#urlbar[focused] {
+    #identity-box, #trust-icon-container, #tracking-protection-icon-container {
+        opacity: 1;
+        position: relative;
+        background: none;
+    }
+}
+
 
 @-moz-document url-prefix("chrome:") {
     #urlbar[breakout-extend='true'] {

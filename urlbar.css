@@ -58,6 +58,9 @@
     }
 }
 
+#urlbar[breakout-extend='false'] .urlbar-input-box, #urlbar:is(:not([breakout-extend])) .urlbar-input-box {
+    padding-left: 12px;
+}
 
 @-moz-document url-prefix("chrome:") {
     #urlbar[breakout-extend='true'] {

@@ -10,10 +10,6 @@
     display: none;
 }
 
-#customizableui-special-spring70 {
-    max-width: 54px !important;
-}
-
 #nav-bar #urlbar:not([breakout-extend='true']) {
     :root:not([supress-primary-adjustment]) & #urlbar-background {
         margin: 2px !important;
@@ -28,6 +24,7 @@
     }
 }
 
+/* twilight
 #identity-box, #trust-icon-container, #tracking-protection-icon-container {
     position: absolute;
     transform: translateY(-50%);
@@ -60,6 +57,16 @@
 
 #urlbar[breakout-extend='false'] .urlbar-input-box, #urlbar:is(:not([breakout-extend])) .urlbar-input-box {
     padding-left: 12px;
+}
+*/
+
+#urlbar[breakout]:not([open]) {
+    top: 5px !important;
+}
+
+#nav-bar {
+    position: relative !important;
+    top: 2px;
 }
 
 @-moz-document url-prefix("chrome:") {

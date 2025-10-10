@@ -61,7 +61,7 @@
 */
 
 #urlbar[breakout]:not([open]) {
-    top: 5px !important;
+    translate: 0 -2px;
 }
 
 #nav-bar {

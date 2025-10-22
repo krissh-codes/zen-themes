@@ -64,6 +64,10 @@
     translate: 0 -2px;
 }
 
+#urlbar * {
+    font-weight: normal !important;
+}
+
 #nav-bar {
     position: relative !important;
     top: 2px;

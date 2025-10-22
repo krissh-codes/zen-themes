@@ -3,3 +3,11 @@
     --border-radius-medium: 10px;
     font-family: var(--theme-font-family);
 }
+
+#zen-appcontent-navbar-container {
+    --zen-toolbar-height: 38px;
+}
+
+#navigator-toolbox {
+    --zen-toolbar-height: 36px;
+}

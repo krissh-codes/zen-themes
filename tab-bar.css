@@ -44,3 +44,11 @@ zen-workspace {
     width: 42px !important;
     max-width: 50% !important;
 }
+
+toolbar .toolbaritem-combined-buttons {
+    margin-inline: 0 !important;
+}
+
+#navigator-toolbox[zen-sidebar-expanded="true"] {
+    padding-top: 2px !important;
+}

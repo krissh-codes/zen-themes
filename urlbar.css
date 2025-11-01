@@ -142,7 +142,7 @@
     }
 
     #urlbar-anon-search-settings {
-        margin-right: 0px !important;
+        margin-right: 0 !important;
     }
 
     .urlbarView-row-inner {
@@ -154,5 +154,16 @@
         stroke: transparent !important;
         width: 10px !important;
         height: 10px !important;
+    }
+}
+
+:root:not([zen-single-toolbar="true"]) #urlbar:not([breakout-extend="true"]) .urlbar-input-container:not([pageproxystate="invalid"]) {
+    & #identity-box {
+        order: -1 !important;
+    }
+
+    & #zen-copy-url-button {
+        order: 1 !important;
+        display: none;
     }
 }

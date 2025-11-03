@@ -35,6 +35,28 @@ zen-workspace {
     }
 }
 
+#tabbrowser-tabs {
+    & .tabbrowser-tab[pinned="true"] {
+        & .tabbrowser-tab {
+            position: absolute !important;
+            top: 0;
+            right: 0;
+            border-radius: var(--tab-border-radius) !important;
+
+            & .tab-stack > * {
+                height: 24px !important;
+            }
+
+            & .tab-icon-image {
+                position: absolute !important;
+                top: 1px;
+                left: 1px;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }
+}
+
 :root:not([zen-sidebar-expanded='true']) {
     --tab-min-width: 42px !important;
     --zen-toolbox-padding: 4px !important;

@@ -54,6 +54,12 @@ zen-workspace {
                 transform: translate(-50%, -50%);
             }
         }
+
+        .tab-audio-button {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
     }
 }
 

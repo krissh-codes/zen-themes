@@ -22,6 +22,16 @@
     #zen-media-controls-toolbar {
         margin-top: 10px;
     }
+
+
+}
+
+#nav-bar > * {
+    margin-top: -3px;
+}
+
+#nav-bar #urlbar-container {
+    margin-top: 3px;
 }
 
 /* twilight

@@ -11,14 +11,14 @@ zen-workspace {
 }
 
 .pinned-tabs-container-separator {
-    padding-top: 20px;
+    height: 2px !important;
+    max-height: 2px !important;
+    width: 10% !important;
+    min-width: 10px !important;
+    border-radius: 2px !important;
 
     & > toolbarseparator {
         height: 2px !important;
-        max-height: 2px !important;
-        width: 10% !important;
-        min-width: 10px !important;
-        border-radius: 2px !important;
     }
 
     .zen-workspace-close-unpinned-tabs-button {

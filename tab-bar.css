@@ -10,6 +10,10 @@ zen-workspace {
     padding-top: 50px !important;
 }
 
+.zen-tab-group-start.space-fake-collapsible-start {
+    display: none !important;
+}
+
 .pinned-tabs-container-separator {
     height: 2px !important;
     max-height: 2px !important;
